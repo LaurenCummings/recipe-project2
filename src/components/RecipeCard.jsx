@@ -1,3 +1,5 @@
+import '../css/RecipeCard.css';
+
 function RecipeCard( {recipe} ) {
     return (
         <div>
