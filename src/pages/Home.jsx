@@ -1,3 +1,4 @@
+import '../css/Home.css';
 import { useState, useEffect } from 'react';
 import RecipeCard from '../components/RecipeCard';
 
