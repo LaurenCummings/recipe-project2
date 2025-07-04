@@ -31,4 +31,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     margin-left: 200px;
+    overflow-y: scroll;
+    height: calc(100vh - 150px);
 }
