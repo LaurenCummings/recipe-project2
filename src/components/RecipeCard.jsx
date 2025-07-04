@@ -1,7 +1,8 @@
 function RecipeCard( {recipe} ) {
     return (
         <div>
-            RecipeCard
+            <h2>{recipe.name}</h2>
+            <img src={recipe.image} alt={recipe.name} />
         </div>
     )
 }
