@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import RecipeCard from '../components/RecipeCard';
 
 function Home() {
     const [loading, setLoading] = useState(false);
@@ -33,11 +34,10 @@ function Home() {
                 ) : (
                     <div className="recipes">
                     {
-                        recipeList.map((item) => {
+                        recipeList.map((recipe) => {
                             return (
-                                <img src={item.image} alt={item.name} />    
+                                <RecipeCard recipe={recipe} key={recipe.id} />
                             )
-                            
                         })
                     }
                 </div>    

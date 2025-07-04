@@ -1,4 +1,4 @@
-function RecipeCard() {
+function RecipeCard( {recipe} ) {
     return (
         <div>
             RecipeCard
