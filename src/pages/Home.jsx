@@ -33,23 +33,29 @@ function Home() {
                 <input />
                 <button>Search</button>
             </div>
-            
-            {
-                loading ? (
-                    <div className="loading">Loading...</div>
-                ) : (
-                    <div className="recipes">
-                    {
-                        recipeList.map((recipe) => {
-                            return (
-                                <RecipeCard recipe={recipe} key={recipe.id} />
-                            )
-                        })
-                    }
-                </div>    
-                )
-            }
-            
+            <div>
+                <div className="sidebar">
+                    <p>Filter by</p>
+                    <p>Filter by</p>
+                    <p>Filter by</p>
+                </div>
+
+                {
+                    loading ? (
+                        <div className="loading">Loading...</div>
+                    ) : (
+                        <div className="recipes">
+                        {
+                            recipeList.map((recipe) => {
+                                return (
+                                    <RecipeCard recipe={recipe} key={recipe.id} />
+                                )
+                            })
+                        }
+                    </div>    
+                    )
+                }                
+            </div>
         </div>
     )
 }
