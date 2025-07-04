@@ -28,7 +28,12 @@ function Home() {
     console.log(recipeList);
 
     return (
-        <div>
+        <div className="home">
+            <div className="search">
+                <input />
+                <button>Search</button>
+            </div>
+            
             {
                 loading ? (
                     <div className="loading">Loading...</div>
