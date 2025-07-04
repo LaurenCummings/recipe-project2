@@ -1,3 +1,12 @@
+.recipe {
+    margin-bottom: 30px;
+}
+
 .recipe img {
     height: 300px;
+    border-radius: 10px;
+}
+
+.recipe h2 {
+    margin-top: 5px;
 }
