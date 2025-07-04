@@ -1,9 +1,13 @@
 .search {
-    margin: 50px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    height: 130px;
 }
 
 .search input {
@@ -26,4 +30,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
+    margin-left: 200px;
 }
