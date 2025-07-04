@@ -10,7 +10,7 @@ function Home() {
             const res = await fetch('https://dummyjson.com/recipes');
             const data = await res.json();
             if (data?.recipes) {
-                setRecipeList(data);
+                setRecipeList(data.recipes);
                 setLoading(false);    
             }
         } catch(e) {
@@ -27,7 +27,23 @@ function Home() {
 
     return (
         <div>
-            Home
+            {
+                loading ? (
+                    <div className="loading">Loading...</div>
+                ) : (
+                    <div className="recipes">
+                    {
+                        recipeList.map((item) => {
+                            return (
+                                <img src={item.image} alt={item.name} />    
+                            )
+                            
+                        })
+                    }
+                </div>    
+                )
+            }
+            
         </div>
     )
 }
