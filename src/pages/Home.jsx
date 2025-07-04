@@ -33,7 +33,6 @@ function Home() {
                 <input />
                 <button>Search</button>
             </div>
-            <div>
                 <div className="sidebar">
                     <p>Filter by</p>
                     <p>Filter by</p>
@@ -56,7 +55,7 @@ function Home() {
                     )
                 }                
             </div>
-        </div>
+
     )
 }
 

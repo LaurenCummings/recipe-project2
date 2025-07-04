@@ -17,6 +17,11 @@
     border-radius: 5px;
 }
 
+.sidebar {
+    width: 200px;
+    position: fixed;
+}
+
 .recipes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
