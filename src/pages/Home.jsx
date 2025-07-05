@@ -44,6 +44,7 @@ function Home() {
     }
 
     function handleRadioChange(event) {
+        setSearchTerm("");
         setMealType(event.target.value);
     }
 
