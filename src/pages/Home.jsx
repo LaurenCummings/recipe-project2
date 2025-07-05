@@ -51,7 +51,7 @@ function Home() {
         getRecipes();
     }, []);
 
-    console.log(recipeList);
+    // console.log(recipeList);
 
     return (
         <div className="home">
@@ -67,23 +67,23 @@ function Home() {
                     <fieldset>
                         <legend>Filter by Meal Type:</legend>
                         <div>
-                            <input type="radio" name="meal" value="all" onChange={handleRadioChange} />
+                            <input type="radio" name="meal" value="all" checked={mealType === "all"} onChange={handleRadioChange} />
                             <label for="all">All Meals</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="breakfast" onChange={handleRadioChange} />
+                            <input type="radio" name="meal" value="breakfast" checked={mealType === "breakfast"} onChange={handleRadioChange} />
                             <label for="breakfast">Breakfast</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="lunch" onChange={handleRadioChange} />
+                            <input type="radio" name="meal" value="lunch" checked={mealType === "lunch"} onChange={handleRadioChange} />
                             <label for="lunch">Lunch</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="dinner" onChange={handleRadioChange} />
+                            <input type="radio" name="meal" value="dinner" checked={mealType === "dinner"} onChange={handleRadioChange} />
                             <label for="dinner">Dinner</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="snack" onChange={handleRadioChange} />
+                            <input type="radio" name="meal" value="snack" checked={mealType === "snack"} onChange={handleRadioChange} />
                             <label for="snack">Snack</label>
                         </div>
                     </fieldset>
