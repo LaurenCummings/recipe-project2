@@ -47,9 +47,27 @@ function Home() {
         setMealType(event.target.value);
     }
 
+    async function getRecipesByMeal() {
+        try {
+            setLoading(true);
+
+        } catch (e) {
+            console.log(e);
+            setLoading(false);
+        }
+    }
+
     useEffect(() => {
         getRecipes();
     }, []);
+
+    useEffect(() => {
+        if (mealType === "all") {
+            getRecipes();
+        } else {
+            getRecipesByMeal();
+        }
+    }, [mealType]);
 
     // console.log(recipeList);
 
