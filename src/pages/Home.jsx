@@ -69,6 +69,18 @@ function Home() {
                             <input type="radio" name="meal" value="breakfast" />
                             <label for="breakfast">Breakfast</label>
                         </div>
+                        <div>
+                            <input type="radio" name="meal" value="lunch" />
+                            <label for="lunch">Lunch</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="meal" value="dinner" />
+                            <label for="dinner">Dinner</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="meal" value="snack" />
+                            <label for="snack">Snack</label>
+                        </div>
                     </fieldset>
                     <p>Filter by</p>
                     <p>Filter by</p>
