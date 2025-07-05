@@ -59,14 +59,13 @@ function Home() {
                 <button onClick={handleSearch}>Search</button>
             </div>
                 <div className="sidebar">
-                    <label for="meal-select">Filter by Meal:</label>
-                    <select name="meals" id="meal-select">
-                        <option value="all">All Meals</option>
-                        <option value="breakfast">Breakfast</option>
-                        <option value="lunch">Lunch</option>
-                        <option value="dinner">Dinner</option>
-                        <option value="snack">Snack</option>
-                    </select>
+                    <fieldset>
+                        <legend>Filter by Meal Type:</legend>
+                        <div>
+                            <input type="radio" name="meal" value="all" checked />
+                            <label for="all">All Meals</label>
+                        </div>
+                    </fieldset>
                     <p>Filter by</p>
                     <p>Filter by</p>
                 </div>
