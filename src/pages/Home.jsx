@@ -55,7 +55,7 @@ function Home() {
                     placeholder="Search for recipes..." 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}/>
-                <button>Search</button>
+                <button onClick={handleSearch}>Search</button>
             </div>
                 <div className="sidebar">
                     <p>Filter by</p>
