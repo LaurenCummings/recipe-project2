@@ -109,7 +109,7 @@ function Home() {
                                 type="radio" 
                                 name="meal" 
                                 value="breakfast" 
-                                checked={mealType === "breakfast"} 
+                                checked={mealType === "breakfast" && !checkAll} 
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="breakfast">Breakfast</label>
@@ -119,7 +119,7 @@ function Home() {
                                 type="radio" 
                                 name="meal" 
                                 value="lunch" 
-                                checked={mealType === "lunch"} 
+                                checked={mealType === "lunch" && !checkAll} 
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="lunch">Lunch</label>
@@ -129,7 +129,7 @@ function Home() {
                                 type="radio" 
                                 name="meal" 
                                 value="dinner" 
-                                checked={mealType === "dinner"} 
+                                checked={mealType === "dinner" && !checkAll} 
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="dinner">Dinner</label>
@@ -139,7 +139,7 @@ function Home() {
                                 type="radio" 
                                 name="meal" 
                                 value="dessert" 
-                                checked={mealType === "dessert"} 
+                                checked={mealType === "dessert" && !checkAll} 
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="dessert">Dessert</label>
@@ -149,7 +149,7 @@ function Home() {
                                 type="radio" 
                                 name="meal" 
                                 value="snack" 
-                                checked={mealType === "snack"} 
+                                checked={mealType === "snack" && !checkAll} 
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="snack">Snack</label>
