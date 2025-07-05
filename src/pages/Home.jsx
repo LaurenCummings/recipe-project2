@@ -23,7 +23,9 @@ function Home() {
     }
 
     async function handleSearch() {
-        if(!searchTerm.trim()) return;
+        if(!searchTerm.trim()) {
+            getRecipes();
+        };
         if (loading) return;
 
         setLoading(true);
