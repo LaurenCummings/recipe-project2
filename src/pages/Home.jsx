@@ -67,23 +67,53 @@ function Home() {
                     <fieldset>
                         <legend>Filter by Meal Type:</legend>
                         <div>
-                            <input type="radio" name="meal" value="all" checked={mealType === "all"} onChange={handleRadioChange} />
+                            <input 
+                                type="radio" 
+                                name="meal" 
+                                value="all" 
+                                checked={mealType === "all"} 
+                                onChange={handleRadioChange} 
+                            />
                             <label htmlFor="all">All Meals</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="breakfast" checked={mealType === "breakfast"} onChange={handleRadioChange} />
+                            <input 
+                                type="radio" 
+                                name="meal" 
+                                value="breakfast" 
+                                checked={mealType === "breakfast"} 
+                                onChange={handleRadioChange} 
+                            />
                             <label htmlFor="breakfast">Breakfast</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="lunch" checked={mealType === "lunch"} onChange={handleRadioChange} />
+                            <input 
+                                type="radio" 
+                                name="meal" 
+                                value="lunch" 
+                                checked={mealType === "lunch"} 
+                                onChange={handleRadioChange} 
+                            />
                             <label htmlFor="lunch">Lunch</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="dinner" checked={mealType === "dinner"} onChange={handleRadioChange} />
+                            <input 
+                                type="radio" 
+                                name="meal" 
+                                value="dinner" 
+                                checked={mealType === "dinner"} 
+                                onChange={handleRadioChange} 
+                            />
                             <label htmlFor="dinner">Dinner</label>
                         </div>
                         <div>
-                            <input type="radio" name="meal" value="snack" checked={mealType === "snack"} onChange={handleRadioChange} />
+                            <input 
+                                type="radio" 
+                                name="meal" 
+                                value="snack" 
+                                checked={mealType === "snack"} 
+                                onChange={handleRadioChange} 
+                            />
                             <label htmlFor="snack">Snack</label>
                         </div>
                     </fieldset>
