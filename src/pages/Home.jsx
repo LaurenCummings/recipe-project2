@@ -50,7 +50,12 @@ function Home() {
     async function getRecipesByMeal() {
         try {
             setLoading(true);
-
+            const res = await fetch(`https://dummyjson.com/recipes/meal-type/${mealType}`);
+            const data = res.json();
+            if (data?.recipes) {
+                setRecipeList(data.recipes);
+                setLoading(false);
+            }
         } catch (e) {
             console.log(e);
             setLoading(false);
