@@ -8,7 +8,7 @@ function Home() {
     const [searchTerm, setSearchTerm] = useState("");
     const [mealType, setMealType] = useState("all");
     // used if user enters search term while radio buttons are checked
-    const [allChecked, setAllChecked] = useState(false);
+    const [checkAll, setCheckAll] = useState(false);
 
     async function getRecipes() {
         try {
@@ -70,6 +70,7 @@ function Home() {
     }, []);
 
     useEffect(() => {
+        setCheckAll(false);
         if (mealType === "all") {
             getRecipes();
         } else {
@@ -97,7 +98,7 @@ function Home() {
                                 type="radio" 
                                 name="meal" 
                                 value="all" 
-                                checked={mealType === "all"} 
+                                checked={mealType === "all" || checkAll} 
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="all">All Meals</label>
