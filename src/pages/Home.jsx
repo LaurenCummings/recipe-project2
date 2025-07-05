@@ -82,8 +82,6 @@ function Home() {
                             <label for="snack">Snack</label>
                         </div>
                     </fieldset>
-                    <p>Filter by</p>
-                    <p>Filter by</p>
                 </div>
 
                 {
