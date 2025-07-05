@@ -22,6 +22,25 @@ function Home() {
         }
     }
 
+    async function handleSearch(event) {
+        event.preventDefault();
+        if(!searchTerm.trim()) return;
+        if (loading) return;
+
+        setLoading(true);
+        try {
+            const res = await fetch(`https://dummyjson.com/recipes/search?q=${searchTerm}`);
+            const searchResults = await res.json();
+            if (searchResults?.recipes) {
+                setRecipeList(searchResults.recipes);
+                setLoading(false);
+            }
+        } catch (e) {
+                console.log(e);
+                setLoading(false);
+        }
+    }
+
     useEffect(() => {
         getRecipes();
     }, []);
