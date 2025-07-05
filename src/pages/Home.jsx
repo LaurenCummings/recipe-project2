@@ -62,8 +62,12 @@ function Home() {
                     <fieldset>
                         <legend>Filter by Meal Type:</legend>
                         <div>
-                            <input type="radio" name="meal" value="all" checked />
+                            <input type="radio" name="meal" value="all" />
                             <label for="all">All Meals</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="meal" value="breakfast" />
+                            <label for="breakfast">Breakfast</label>
                         </div>
                     </fieldset>
                     <p>Filter by</p>
