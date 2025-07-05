@@ -22,8 +22,7 @@ function Home() {
         }
     }
 
-    async function handleSearch(event) {
-        event.preventDefault();
+    async function handleSearch() {
         if(!searchTerm.trim()) return;
         if (loading) return;
 
@@ -45,7 +44,7 @@ function Home() {
         getRecipes();
     }, []);
 
-    console.log(recipeList);
+    // console.log(recipeList);
 
     return (
         <div className="home">
