@@ -26,6 +26,7 @@ function Home() {
     }
 
     async function handleSearch() {
+        setCheckAll(true);
         if(!searchTerm.trim()) {
             getRecipes();
         };
