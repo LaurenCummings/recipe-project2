@@ -46,7 +46,7 @@ function Home() {
         getRecipes();
     }, []);
 
-    // console.log(recipeList);
+    console.log(recipeList);
 
     return (
         <div className="home">
@@ -59,7 +59,14 @@ function Home() {
                 <button onClick={handleSearch}>Search</button>
             </div>
                 <div className="sidebar">
-                    <p>Filter by</p>
+                    <label for="meal-select">Filter by Meal:</label>
+                    <select name="meals" id="meal-select">
+                        <option value="all">All Meals</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="snack">Snack</option>
+                    </select>
                     <p>Filter by</p>
                     <p>Filter by</p>
                 </div>
