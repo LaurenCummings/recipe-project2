@@ -5,6 +5,7 @@ import RecipeCard from '../components/RecipeCard';
 function Home() {
     const [loading, setLoading] = useState(false);
     const [recipeList, setRecipeList] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
 
     async function getRecipes() {
         try {
