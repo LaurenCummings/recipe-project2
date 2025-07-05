@@ -50,7 +50,11 @@ function Home() {
     return (
         <div className="home">
             <div className="search">
-                <input />
+                <input 
+                    type="text"
+                    placeholder="Search for recipes..." 
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}/>
                 <button>Search</button>
             </div>
                 <div className="sidebar">
