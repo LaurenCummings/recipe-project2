@@ -51,7 +51,7 @@ function Home() {
         try {
             setLoading(true);
             const res = await fetch(`https://dummyjson.com/recipes/meal-type/${mealType}`);
-            const data = res.json();
+            const data = await res.json();
             if (data?.recipes) {
                 setRecipeList(data.recipes);
                 setLoading(false);
@@ -128,6 +128,16 @@ function Home() {
                                 onChange={handleRadioChange} 
                             />
                             <label htmlFor="dinner">Dinner</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="meal" 
+                                value="dessert" 
+                                checked={mealType === "dessert"} 
+                                onChange={handleRadioChange} 
+                            />
+                            <label htmlFor="dessert">Dessert</label>
                         </div>
                         <div>
                             <input 
