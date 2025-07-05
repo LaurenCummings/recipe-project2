@@ -102,7 +102,7 @@ function Home() {
                                 checked={mealType === "all" || checkAll} 
                                 onChange={handleRadioChange} 
                             />
-                            <label htmlFor="all">All Meals</label>
+                            <label htmlFor="all">All</label>
                         </div>
                         <div>
                             <input 
