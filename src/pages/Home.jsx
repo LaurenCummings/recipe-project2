@@ -43,6 +43,10 @@ function Home() {
         }
     }
 
+    function handleRadioChange(event) {
+        setMealType(event.target.value);
+    }
+
     useEffect(() => {
         getRecipes();
     }, []);
