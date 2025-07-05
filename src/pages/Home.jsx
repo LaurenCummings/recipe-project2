@@ -6,6 +6,7 @@ function Home() {
     const [loading, setLoading] = useState(false);
     const [recipeList, setRecipeList] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+    const [mealType, setMealType] = useState("all");
 
     async function getRecipes() {
         try {
