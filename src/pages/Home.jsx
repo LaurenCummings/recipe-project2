@@ -50,6 +50,7 @@ function Home() {
 
     function handleMealsChange(event) {
         setSearchTerm("");
+        setCheckAllCulture(true);
         setMealType(event.target.value);
     }
 
