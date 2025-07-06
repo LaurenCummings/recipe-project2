@@ -75,6 +75,21 @@ function Home() {
         }
     }
 
+    async function getRecipesByCulture() {
+        try {
+            setLoading(true);
+            const res = await fetch(`https://dummyjson.com/recipes/tag/${cultureType}`);
+            const data = await res.json();
+            if (data?.recipes) {
+                setRecipeList(data.recipes);
+                setLoading(false);
+            }
+        } catch (e) {
+            console.log(e);
+            setLoading(false);
+        }
+    }
+
     useEffect(() => {
         getRecipes();
     }, []);
