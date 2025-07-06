@@ -75,20 +75,8 @@ function Home() {
         }
     }
 
-    async function getTags() {
-        try {
-            const res = await fetch(`https://dummyjson.com/recipes/tags`);
-            const data = await res.json();
-            console.log(data);
-            
-        } catch (e) {
-            console.log(e);
-        }
-    }
-
     useEffect(() => {
         getRecipes();
-        getTags();
     }, []);
 
     useEffect(() => {
