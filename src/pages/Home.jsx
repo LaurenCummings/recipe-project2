@@ -1,5 +1,6 @@
 import '../css/Home.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import RecipeCard from '../components/RecipeCard';
 
 function Home() {
@@ -391,7 +392,9 @@ function Home() {
                         {
                             recipeList.map((recipe) => {
                                 return (
-                                    <RecipeCard recipe={recipe} key={recipe.id} />
+                                    <Link to="/:recipe" state={recipe} >
+                                        <RecipeCard recipe={recipe} key={recipe.id} />    
+                                    </Link>
                                 )
                             })
                         }
