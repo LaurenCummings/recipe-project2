@@ -202,6 +202,16 @@ function Home() {
                             <input 
                                 type="radio" 
                                 name="culture" 
+                                value="brazilian" 
+                                checked={cultureType === "brazilian" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="brazilian">Brazilian</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
                                 value="cuban" 
                                 checked={cultureType === "cuban" || checkAllCulture} 
                                 onChange={handleCultureChange} 
@@ -212,11 +222,41 @@ function Home() {
                             <input 
                                 type="radio" 
                                 name="culture" 
+                                value="greek" 
+                                checked={cultureType === "greek" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="greek">Greek</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
+                                value="hawaiian" 
+                                checked={cultureType === "hawaiian" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="hawaiian">Hawaiian</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
                                 value="indian" 
                                 checked={cultureType === "indian" || checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="indian">Indian</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
+                                value="italian" 
+                                checked={cultureType === "italian" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="italian">Italian</label>
                         </div>
                     </fieldset>
                 </div>
