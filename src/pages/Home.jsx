@@ -167,6 +167,19 @@ function Home() {
                             <label htmlFor="snack">Snack</label>
                         </div>
                     </fieldset>
+                    <fieldset>
+                        <legend>Filter by Culture:</legend>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
+                                value="all" 
+                                checked={cultureType === "all" || checkAll} 
+                                onChange={handleRadioChange} 
+                            />
+                            <label htmlFor="all">All</label>
+                        </div>
+                    </fieldset>
                 </div>
 
                 {
