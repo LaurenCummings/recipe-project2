@@ -113,7 +113,7 @@ function Home() {
         }
     }, [cultureType]);
 
-    // console.log(recipeList);
+    console.log(recipeList);
 
     return (
         <div className="home">
@@ -392,8 +392,8 @@ function Home() {
                         {
                             recipeList.map((recipe) => {
                                 return (
-                                    <Link to="/:recipe" state={recipe} >
-                                        <RecipeCard recipe={recipe} key={recipe.id} />    
+                                    <Link to="/:recipe" key={recipe.id} state={recipe} >
+                                        <RecipeCard recipe={recipe} />    
                                     </Link>
                                 )
                             })
