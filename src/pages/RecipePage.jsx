@@ -1,7 +1,12 @@
-function RecipePage({ recipe }) {
+import { useLocation } from 'react-router-dom';
+
+function RecipePage() {
+    const location = useLocation();
+    const recipe = location.state;
+
     return (
         <div>
-            RecipePage
+            <h2>{recipe.name}</h2>
         </div>
     )
 }
