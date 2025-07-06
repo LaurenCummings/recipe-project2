@@ -47,7 +47,7 @@ function Home() {
         }
     }
 
-    function handleRadioChange(event) {
+    function handleMealsChange(event) {
         setSearchTerm("");
         setMealType(event.target.value);
     }
@@ -113,7 +113,7 @@ function Home() {
                                 name="meal" 
                                 value="all" 
                                 checked={mealType === "all" || checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="all">All</label>
                         </div>
@@ -123,7 +123,7 @@ function Home() {
                                 name="meal" 
                                 value="breakfast" 
                                 checked={mealType === "breakfast" && !checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="breakfast">Breakfast</label>
                         </div>
@@ -133,7 +133,7 @@ function Home() {
                                 name="meal" 
                                 value="lunch" 
                                 checked={mealType === "lunch" && !checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="lunch">Lunch</label>
                         </div>
@@ -143,7 +143,7 @@ function Home() {
                                 name="meal" 
                                 value="dinner" 
                                 checked={mealType === "dinner" && !checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="dinner">Dinner</label>
                         </div>
@@ -153,7 +153,7 @@ function Home() {
                                 name="meal" 
                                 value="dessert" 
                                 checked={mealType === "dessert" && !checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="dessert">Dessert</label>
                         </div>
@@ -163,7 +163,7 @@ function Home() {
                                 name="meal" 
                                 value="snack" 
                                 checked={mealType === "snack" && !checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="snack">Snack</label>
                         </div>
@@ -176,7 +176,7 @@ function Home() {
                                 name="culture" 
                                 value="all" 
                                 checked={cultureType === "all" || checkAllMeals} 
-                                onChange={handleRadioChange} 
+                                onChange={handleMealsChange} 
                             />
                             <label htmlFor="all">All</label>
                         </div>
