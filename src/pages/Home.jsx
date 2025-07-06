@@ -183,10 +183,40 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="all" 
-                                checked={cultureType === "all" || checkAllMeals} 
-                                onChange={handleMealsChange} 
+                                checked={cultureType === "all" || checkAllCulture} 
+                                onChange={handleCultureChange} 
                             />
                             <label htmlFor="all">All</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
+                                value="asian" 
+                                checked={cultureType === "asian" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="asian">Asian</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
+                                value="cuban" 
+                                checked={cultureType === "cuban" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="cuban">Cuban</label>
+                        </div>
+                        <div>
+                            <input 
+                                type="radio" 
+                                name="culture" 
+                                value="indian" 
+                                checked={cultureType === "indian" || checkAllCulture} 
+                                onChange={handleCultureChange} 
+                            />
+                            <label htmlFor="indian">Indian</label>
                         </div>
                     </fieldset>
                 </div>
