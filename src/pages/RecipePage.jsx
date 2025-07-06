@@ -1,3 +1,4 @@
+import '../css/RecipePage.css';
 import { useLocation } from 'react-router-dom';
 
 function RecipePage() {
@@ -5,8 +6,9 @@ function RecipePage() {
     const recipe = location.state;
 
     return (
-        <div>
+        <div className="recipe-page">
             <h2>{recipe.name}</h2>
+            <img src={recipe.image} alt={recipe.name} />
         </div>
     )
 }
