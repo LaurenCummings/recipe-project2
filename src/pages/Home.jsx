@@ -190,7 +190,7 @@ function Home() {
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Filter by Culture:</legend>
+                        <legend>Filter by Cuisine:</legend>
                         <div>
                             <input 
                                 type="radio" 
