@@ -103,6 +103,15 @@ function Home() {
         }
     }, [mealType]);
 
+    useEffect(() => {
+        setCheckAllCulture(false);
+        if (cultureType === "all") {
+            getRecipes();
+        } else {
+            getRecipesByCulture();
+        }
+    }, [cultureType]);
+
     // console.log(recipeList);
 
     return (
