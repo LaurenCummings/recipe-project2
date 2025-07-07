@@ -22,6 +22,10 @@ function Rating({ rating, count }) {
         return emptyStars;
     }
 
+    const fullStars = new Array(calcFullStars());
+    const halfStars = new Array(calcHalfStars());
+    const emptyStars = new Array(calcEmptyStars());
+
     return (
         <div className="rating">
             <div className="stars">
