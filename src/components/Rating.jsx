@@ -1,3 +1,4 @@
+import '../css/Rating.css';
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from 'react-icons/io';
 
 function Rating({ rating, count }) {
