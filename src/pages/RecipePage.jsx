@@ -1,5 +1,6 @@
 import '../css/RecipePage.css';
 import { useLocation } from 'react-router-dom';
+import Rating from '../components/Rating';
 
 function RecipePage() {
     const location = useLocation();
@@ -9,6 +10,7 @@ function RecipePage() {
         <div className="recipe-page">
             <h2>{recipe.name}</h2>
             <p>Difficulty: {recipe.difficulty}</p>
+            <Rating />
             <p>Rating: {recipe.rating}</p>
             <p>Review Count: {recipe.reviewCount}</p>
             <p>Cook Time: {recipe.cookTimeMinutes} minutes</p>
