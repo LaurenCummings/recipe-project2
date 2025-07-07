@@ -392,7 +392,7 @@ function Home() {
                         {
                             recipeList.map((recipe) => {
                                 return (
-                                    <Link to="/:recipe" key={recipe.id} state={recipe} >
+                                    <Link to={`/${recipe.name}`} key={recipe.id} state={recipe} >
                                         <RecipeCard recipe={recipe} />    
                                     </Link>
                                 )
