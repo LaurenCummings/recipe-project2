@@ -1,5 +1,6 @@
 import '../css/RecipePage.css';
 import { useLocation } from 'react-router-dom';
+import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from 'react-icons/io';
 
 function RecipePage() {
     const location = useLocation();
