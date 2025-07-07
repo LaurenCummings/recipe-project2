@@ -6,3 +6,10 @@
     height: 500px;
     border-radius: 10px;
 }
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}

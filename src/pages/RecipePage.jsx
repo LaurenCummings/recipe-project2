@@ -8,13 +8,17 @@ function RecipePage() {
 
     return (
         <div className="recipe-page">
-            <h2>{recipe.name}</h2>
-            <Rating rating={recipe.rating} count={recipe.reviewCount}/>
-            <p>Difficulty: {recipe.difficulty}</p>
-            <p>Cook Time: {recipe.cookTimeMinutes} minutes</p>
-            <p>Servings: {recipe.servings}</p>
-            <p>{recipe.caloriesPerServing} Calories per serving</p>
-            <img src={recipe.image} alt={recipe.name} />
+            <div className="overview">
+                <div>
+                    <h2>{recipe.name}</h2>
+                    <Rating rating={recipe.rating} count={recipe.reviewCount}/>
+                    <p>Difficulty: {recipe.difficulty}</p>
+                    <p>Cook Time: {recipe.cookTimeMinutes} minutes</p>
+                    <p>Servings: {recipe.servings}</p>
+                    <p>{recipe.caloriesPerServing} Calories per serving</p>
+                </div>
+                <img src={recipe.image} alt={recipe.name} />
+            </div>
             <div className="ingredients">
                 <h3>Ingredients</h3>
                 {
