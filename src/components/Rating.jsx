@@ -1,6 +1,6 @@
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from 'react-icons/io';
 
-function Rating() {
+function Rating({ rating, count }) {
     return (
         <div>
             Rating

@@ -10,7 +10,7 @@ function RecipePage() {
         <div className="recipe-page">
             <h2>{recipe.name}</h2>
             <p>Difficulty: {recipe.difficulty}</p>
-            <Rating />
+            <Rating rating={recipe.rating} count={recipe.reviewCount}/>
             <p>Rating: {recipe.rating}</p>
             <p>Review Count: {recipe.reviewCount}</p>
             <p>Cook Time: {recipe.cookTimeMinutes} minutes</p>
