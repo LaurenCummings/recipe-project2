@@ -1,5 +1,10 @@
 .rating {
     display: flex;
+    justify-content: center;
+}
+
+.stars {
+    margin-top: 2px;
 }
 
 .count p {
