@@ -34,3 +34,8 @@
     overflow-y: scroll;
     height: calc(100vh - 150px);
 }
+
+.recipes a {
+    text-decoration: none;
+    color: black;
+}
