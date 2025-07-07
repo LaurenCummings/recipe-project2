@@ -23,8 +23,8 @@ function Rating({ rating, count }) {
     }
 
     const fullStars = new Array(calcFullStars()).fill(0);
-    const halfStars = new Array(calcHalfStars());
-    const emptyStars = new Array(calcEmptyStars());
+    const halfStars = new Array(calcHalfStars()).fill(0);
+    const emptyStars = new Array(calcEmptyStars()).fill(0);
 
     return (
         <div className="rating">
@@ -32,6 +32,7 @@ function Rating({ rating, count }) {
                 {fullStars.map((item, index) => (
                     <IoIosStar key={index} /> 
                 ))}
+
             </div>
             <div className="count">
                 <p>({count})</p>
