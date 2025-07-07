@@ -32,7 +32,9 @@ function Rating({ rating, count }) {
                 {fullStars.map((item, index) => (
                     <IoIosStar key={index} /> 
                 ))}
-
+                {halfStars.map((item, index) => (
+                    <IoIosStarHalf key={index} />
+                ))}
             </div>
             <div className="count">
                 <p>({count})</p>
