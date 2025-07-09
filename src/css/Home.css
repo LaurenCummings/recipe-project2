@@ -92,7 +92,6 @@
     .arrow-right:hover {
         transform: translateX(10px);
     }
-    }
 
     .sidebar {
         display: none;
