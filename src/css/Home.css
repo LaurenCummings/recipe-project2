@@ -21,6 +21,10 @@
     border-radius: 5px;
 }
 
+.arrow-right {
+    display: none;
+}
+
 .sidebar {
     width: 200px;
     position: fixed;
@@ -74,6 +78,13 @@
     .search {
         margin: 0px 20px;
         gap: 10px;
+    }
+
+    .arrow-right {
+        display: block;
+        position: fixed;
+        font-size: 50px;
+        top: 50vh;
     }
 
     .sidebar {
