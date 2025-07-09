@@ -30,6 +30,7 @@ function Home() {
 
     async function handleSearch() {
         setCheckAllMeals(true);
+        setCheckAllCulture(true);
         if(!searchTerm.trim()) {
             getRecipes();
         };
