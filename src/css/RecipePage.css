@@ -1,6 +1,7 @@
 .recipe-page {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .recipe-page img {
@@ -31,4 +32,15 @@
 .instructions li {
     line-height: 40px;
     text-align: left;
+}
+
+@media (max-width: 800px) {
+    .overview {
+        flex-direction: column;
+    }
+
+    .recipe-details {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
