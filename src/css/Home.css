@@ -85,6 +85,7 @@
         position: fixed;
         font-size: 50px;
         top: 50vh;
+        cursor: pointer;
     }
 
     .sidebar {
