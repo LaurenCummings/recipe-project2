@@ -205,7 +205,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="asian" 
-                                checked={cultureType === "asian" || checkAllCulture} 
+                                checked={cultureType === "asian" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="asian">Asian</label>
@@ -215,7 +215,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="brazilian" 
-                                checked={cultureType === "brazilian" || checkAllCulture} 
+                                checked={cultureType === "brazilian" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="brazilian">Brazilian</label>
@@ -225,7 +225,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="cuban" 
-                                checked={cultureType === "cuban" || checkAllCulture} 
+                                checked={cultureType === "cuban" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="cuban">Cuban</label>
@@ -235,7 +235,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="greek" 
-                                checked={cultureType === "greek" || checkAllCulture} 
+                                checked={cultureType === "greek" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="greek">Greek</label>
@@ -245,7 +245,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="hawaiian" 
-                                checked={cultureType === "hawaiian" || checkAllCulture} 
+                                checked={cultureType === "hawaiian" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="hawaiian">Hawaiian</label>
@@ -255,7 +255,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="indian" 
-                                checked={cultureType === "indian" || checkAllCulture} 
+                                checked={cultureType === "indian" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="indian">Indian</label>
@@ -265,7 +265,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="italian" 
-                                checked={cultureType === "italian" || checkAllCulture} 
+                                checked={cultureType === "italian" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="italian">Italian</label>
@@ -275,7 +275,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="japanese" 
-                                checked={cultureType === "japanese" || checkAllCulture} 
+                                checked={cultureType === "japanese" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="japanese">Japanese</label>
@@ -285,7 +285,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="korean" 
-                                checked={cultureType === "korean" || checkAllCulture} 
+                                checked={cultureType === "korean" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="korean">Korean</label>
@@ -295,7 +295,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="mediterranean" 
-                                checked={cultureType === "mediterranean" || checkAllCulture} 
+                                checked={cultureType === "mediterranean" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="mediterranean">Mediterranean</label>
@@ -305,7 +305,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="mexican" 
-                                checked={cultureType === "mexican" || checkAllCulture} 
+                                checked={cultureType === "mexican" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="mexican">Mexican</label>
@@ -315,7 +315,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="moroccan" 
-                                checked={cultureType === "moroccan" || checkAllCulture} 
+                                checked={cultureType === "moroccan" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="moroccan">Moroccan</label>
@@ -325,7 +325,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="pakistani" 
-                                checked={cultureType === "pakistani" || checkAllCulture} 
+                                checked={cultureType === "pakistani" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="pakistani">Pakistani</label>
@@ -335,7 +335,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="russian" 
-                                checked={cultureType === "russian" || checkAllCulture} 
+                                checked={cultureType === "russian" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="russian">Russian</label>
@@ -345,7 +345,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="spanish" 
-                                checked={cultureType === "spanish" || checkAllCulture} 
+                                checked={cultureType === "spanish" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="spanish">Spanish</label>
@@ -355,7 +355,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="thai" 
-                                checked={cultureType === "thai" || checkAllCulture} 
+                                checked={cultureType === "thai" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="thai">Thai</label>
@@ -365,7 +365,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="turkish" 
-                                checked={cultureType === "turkish" || checkAllCulture} 
+                                checked={cultureType === "turkish" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="turkish">Turkish</label>
@@ -375,7 +375,7 @@ function Home() {
                                 type="radio" 
                                 name="culture" 
                                 value="vietnamese" 
-                                checked={cultureType === "vietnamese" || checkAllCulture} 
+                                checked={cultureType === "vietnamese" && !checkAllCulture} 
                                 onChange={handleCultureChange} 
                             />
                             <label htmlFor="vietnamese">Vietnamese</label>
