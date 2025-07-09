@@ -113,8 +113,6 @@ function Home() {
         }
     }, [cultureType]);
 
-    console.log(recipeList);
-
     return (
         <div className="home">
             <div className="search">
