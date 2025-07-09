@@ -17,9 +17,15 @@
 .recipe-details {
     display: flex;
     justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
 }
 
 .instructions {
     list-style-type: decimal;
     justify-items: left;
+}
+
+.instructions li {
+    line-height: 40px;
 }
