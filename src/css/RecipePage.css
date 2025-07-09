@@ -1,5 +1,6 @@
 .recipe-page {
     text-align: center;
+    margin-top: 40px;
 }
 
 .recipe-page img {
@@ -18,12 +19,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     margin-top: 20px;
 }
 
 .instructions {
     list-style-type: decimal;
+    width: 500px;
 }
 
 .instructions li {
