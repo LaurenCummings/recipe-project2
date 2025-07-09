@@ -31,7 +31,6 @@ function RecipePage() {
                     }
                 </div>
                 <div className="instructions">
-                    <h3>Instructions</h3>
                     {
                         recipe.instructions.map((item, index) => {
                             return (
