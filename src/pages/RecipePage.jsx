@@ -19,26 +19,29 @@ function RecipePage() {
                 </div>
                 <img src={recipe.image} alt={recipe.name} />
             </div>
-            <div className="ingredients">
-                <h3>Ingredients</h3>
-                {
-                    recipe.ingredients.map((item, index) => {
-                        return (
-                            <p key={index}>{item}</p>
-                        )
-                    })
-                }
+            <div className="recipe-details">
+                <div className="ingredients">
+                    <h3>Ingredients</h3>
+                    {
+                        recipe.ingredients.map((item, index) => {
+                            return (
+                                <p key={index}>{item}</p>
+                            )
+                        })
+                    }
+                </div>
+                <div className="instructions">
+                    <h3>Instructions</h3>
+                    {
+                        recipe.instructions.map((item, index) => {
+                            return (
+                                <li key={index}>{item}</li>
+                            )
+                        })
+                    }
+                </div>                
             </div>
-            <div className="instructions">
-                <h3>Instructions</h3>
-                {
-                    recipe.instructions.map((item, index) => {
-                        return (
-                            <li key={index}>{item}</li>
-                        )
-                    })
-                }
-            </div>
+
         </div>
     )
 }
