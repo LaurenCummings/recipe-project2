@@ -16,4 +16,10 @@
 
 .recipe-details {
     display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    list-style-type: decimal;
+    justify-items: left;
 }
