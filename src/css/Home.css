@@ -92,6 +92,10 @@
     .arrow-right:hover {
         transform: translateX(10px);
     }
+
+    .sidebar-container {
+        display: none;
+    }
     
     .recipes {
         margin-left: 0px;

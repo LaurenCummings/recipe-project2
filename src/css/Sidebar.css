@@ -2,9 +2,3 @@
     width: 200px;
     position: fixed;
 }
-
-@media (max-width: 560px) {
-    .sidebar {
-        display: none;
-    }
-}

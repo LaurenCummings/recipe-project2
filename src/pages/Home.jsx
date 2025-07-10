@@ -122,9 +122,9 @@ function Home() {
             <div className={showFilters ? "arrow-left" : "arrow-right"}>
                 <FiArrowRightCircle onClick={handleShowFilters} />
             </div>            
-            
-            <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCultureType={setCultureType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
-
+            <div className="sidebar-container">
+                <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCultureType={setCultureType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
+            </div>
             {
                 loading ? (
                     <div className="loading">Loading...</div>
