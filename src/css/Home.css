@@ -85,8 +85,10 @@
     }
 
     .arrow-left {
+        left: 150px;
         transition: transform 0.3s ease;
         transform: rotate(180deg);
+        z-index: 99;
     }
 
     .arrow-right:hover {
@@ -94,6 +96,10 @@
     }
 
     .sidebar-container {
+        display: none;
+    }
+
+    .sidebar-hidden {
         display: none;
     }
     
