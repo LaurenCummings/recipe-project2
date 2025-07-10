@@ -21,7 +21,7 @@
     border-radius: 5px;
 }
 
-.arrow-right {
+.arrow-right, .arrow-left {
     display: none;
 }
 
