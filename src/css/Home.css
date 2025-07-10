@@ -89,6 +89,11 @@
         transition: transform 0.3s ease;
     }
 
+    .arrow-left {
+        transition: transform 0.3s ease;
+        transform: rotate(180deg);
+    }
+
     .arrow-right:hover {
         transform: translateX(10px);
     }
