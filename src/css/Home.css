@@ -99,6 +99,11 @@
         display: none;
     }
 
+    .sidebar-responsive {
+        background-color: white;
+        width: 200px;
+    }
+
     .sidebar-hidden {
         display: none;
     }
