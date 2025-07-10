@@ -1,3 +1,5 @@
+import '../css/Sidebar.css';
+
 function Sidebar({ mealType, cultureType, checkAllMeals, checkAllCulture, setSearchTerm, setMealType, setCultureType, setCheckAllCulture, setCheckAllMeals }) {
 
     function handleMealsChange(event) {
