@@ -130,7 +130,7 @@ function Home() {
                     onChange={(e) => setSearchTerm(e.target.value)}/>
                 <button onClick={handleSearch}>Search</button>
             </div>
-            <div className={`{showFilters ? "arrow-left" : "arrow-right"}`}>
+            <div className={showFilters ? "arrow-left" : "arrow-right"}>
                 <FiArrowRightCircle onClick={handleShowFilters} />
             </div>            
             <div className="sidebar">

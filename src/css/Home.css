@@ -80,7 +80,7 @@
         gap: 10px;
     }
 
-    .arrow-right {
+    .arrow-right, .arrow-left {
         display: block;
         position: fixed;
         font-size: 50px;
