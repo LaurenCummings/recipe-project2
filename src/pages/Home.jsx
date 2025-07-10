@@ -94,6 +94,10 @@ function Home() {
         }
     }
 
+    function handleShowFilter() {
+        setShowFilters(!showFilters);
+    }
+
     useEffect(() => {
         getRecipes();
     }, []);
