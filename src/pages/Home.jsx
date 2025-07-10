@@ -94,7 +94,7 @@ function Home() {
         }
     }
 
-    function handleShowFilter() {
+    function handleShowFilters() {
         setShowFilters(!showFilters);
     }
 
@@ -131,7 +131,7 @@ function Home() {
                 <button onClick={handleSearch}>Search</button>
             </div>
             <div className="arrow-right">
-                <FiArrowRightCircle />
+                <FiArrowRightCircle onClick={handleShowFilters} />
             </div>            
             <div className="sidebar">
                 <fieldset>
