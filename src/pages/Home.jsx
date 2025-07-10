@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowRightCircle, FiArrowLeftCircle } from 'react-icons/fi'; 
 import RecipeCard from '../components/RecipeCard';
+import Sidebar from '../components/Sidebar';
 
 function Home() {
     const [loading, setLoading] = useState(false);
@@ -122,6 +123,7 @@ function Home() {
                 <FiArrowRightCircle onClick={handleShowFilters} />
             </div>            
             
+            <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
 
             {
                 loading ? (
