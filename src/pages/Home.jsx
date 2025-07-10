@@ -10,6 +10,7 @@ function Home() {
     const [searchTerm, setSearchTerm] = useState("");
     const [mealType, setMealType] = useState("all");
     const [cultureType, setCultureType] = useState("all");
+    const [showFilters, setShowFilters] = useState(false);
     // used if user enters search term while radio buttons are checked
     const [checkAllMeals, setCheckAllMeals] = useState(false);
     const [checkAllCulture, setCheckAllCulture] = useState(false);
