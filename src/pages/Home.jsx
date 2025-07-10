@@ -52,18 +52,6 @@ function Home() {
         }
     }
 
-    function handleMealsChange(event) {
-        setSearchTerm("");
-        setCheckAllCulture(true);
-        setMealType(event.target.value);
-    }
-
-    function handleCultureChange(event) {
-        setSearchTerm("");
-        setCheckAllMeals(true);
-        setCultureType(event.target.value);
-    }
-
     async function getRecipesByMeal() {
         try {
             setLoading(true);

@@ -1,4 +1,16 @@
 function Sidebar() {
+
+    function handleMealsChange(event) {
+        setSearchTerm("");
+        setCheckAllCulture(true);
+        setMealType(event.target.value);
+    }
+
+    function handleCultureChange(event) {
+        setSearchTerm("");
+        setCheckAllMeals(true);
+        setCultureType(event.target.value);
+    }
     
     return (
         <div className="sidebar">
