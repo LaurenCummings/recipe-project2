@@ -123,7 +123,7 @@ function Home() {
                 <FiArrowRightCircle onClick={handleShowFilters} />
             </div>            
             
-            <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
+            <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCultureType={setCultureType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
 
             {
                 loading ? (

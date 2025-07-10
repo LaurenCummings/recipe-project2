@@ -1,4 +1,4 @@
-function Sidebar({ mealType, cultureType, checkAllMeals, checkAllCulture, setSearchTerm, setMealType, setCheckAllCulture, setCheckAllMeals }) {
+function Sidebar({ mealType, cultureType, checkAllMeals, checkAllCulture, setSearchTerm, setMealType, setCultureType, setCheckAllCulture, setCheckAllMeals }) {
 
     function handleMealsChange(event) {
         setSearchTerm("");
