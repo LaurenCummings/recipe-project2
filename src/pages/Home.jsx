@@ -125,6 +125,9 @@ function Home() {
             <div className="sidebar-container">
                 <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCultureType={setCultureType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
             </div>
+            <div className={showFilters ? "sidebar-responsive" : "sidebar-hidden"}>
+                <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCultureType={setCultureType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
+            </div>
             {
                 loading ? (
                     <div className="loading">Loading...</div>
