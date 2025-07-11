@@ -119,8 +119,12 @@ function Home() {
                     onChange={(e) => setSearchTerm(e.target.value)}/>
                 <button onClick={handleSearch}>Search</button>
             </div>
-            <div className={showFilters ? "arrow-left" : "arrow-right"}>
-                <FiArrowRightCircle onClick={handleShowFilters} />
+            <div>
+                { showFilters ? 
+                    <FiArrowRightCircle className="arrow-right" onClick={handleShowFilters} />
+                    : <FiArrowLeftCircle className="arrow-left" onClick={handleShowFilters} />
+                }
+                
             </div>            
             <div className="sidebar-container">
                 <Sidebar mealType={mealType} cultureType={cultureType} checkAllMeals={checkAllMeals} checkAllCulture={checkAllCulture} setSearchTerm={setSearchTerm} setMealType={setMealType} setCultureType={setCultureType} setCheckAllMeals={setCheckAllMeals} setCheckAllCulture={setCheckAllCulture} />
