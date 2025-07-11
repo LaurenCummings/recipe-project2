@@ -121,8 +121,8 @@ function Home() {
             </div>
             <div>
                 { showFilters ? 
-                    <FiArrowRightCircle className="arrow-right" onClick={handleShowFilters} />
-                    : <FiArrowLeftCircle className="arrow-left" onClick={handleShowFilters} />
+                    <FiArrowLeftCircle className="arrow-left" onClick={handleShowFilters} />
+                    : <FiArrowRightCircle className="arrow-right" onClick={handleShowFilters} />
                 }
                 
             </div>            
