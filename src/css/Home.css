@@ -87,6 +87,7 @@
     .arrow-left {
         left: 150px;
         z-index: 99;
+        animation: appear 0.8s linear;
     }
 
     .arrow-left:hover {
@@ -114,7 +115,6 @@
 
     .sidebar-show {
         transform: translateX(0%);
-
     }
 
     .sidebar-hide {
