@@ -102,11 +102,15 @@
     .sidebar-responsive {
         background-color: white;
         width: 200px;
-        transform: translateX(0%);
+        transition: transform 0.3s linear;
     }
 
-    .sidebar-hidden {
-        display: none;
+    .sidebar-show {
+        transform: translateX(0%);
+
+    }
+
+    .sidebar-hide {
         transform: translateX(-100%);
     }
     
