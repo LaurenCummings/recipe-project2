@@ -102,10 +102,12 @@
     .sidebar-responsive {
         background-color: white;
         width: 200px;
+        transform: translateX(0%);
     }
 
     .sidebar-hidden {
         display: none;
+        transform: translateX(-100%);
     }
     
     .recipes {
