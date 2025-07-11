@@ -118,7 +118,7 @@
     }
 
     .sidebar-hide {
-        transform: translateX(-100%);
+        transform: translateX(-95%);
     }
     
     .recipes {
