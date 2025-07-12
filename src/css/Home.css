@@ -79,7 +79,7 @@
         display: block;
         position: fixed;
         font-size: 50px;
-        top: 305px;;
+        top: 305px;
         cursor: pointer;
         transition: transform 0.3s ease;
     }
@@ -132,8 +132,12 @@
 }
 
 @media (max-height: 620px) {
+    .arrow-right, .arrow-left {
+        top: calc(50vh - 20px);
+    }
+
     .sidebar-responsive {
-        /* height: calc(100vh - 50px); */
+        height: calc(100vh - 50px);
         overflow-x: hidden;
         overflow-y: scroll;
         top: 10px;
