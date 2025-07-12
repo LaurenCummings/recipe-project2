@@ -10,7 +10,7 @@ function RecipePage() {
     return (
         <div className="recipe-page">
             <div className="home-link">
-                <Link className="home-link" to="/">
+                <Link to="/">
                     <FaArrowLeft /> Back to Home
                 </Link>
             </div>
@@ -46,7 +46,11 @@ function RecipePage() {
                     }
                 </div>                
             </div>
-
+            <div className="home-link-responsive">
+                <Link to="/">
+                    <FaArrowLeft /> Back to Home
+                </Link>
+            </div>
         </div>
     )
 }

@@ -9,6 +9,10 @@
     margin: 10px;
 }
 
+.home-link-responsive {
+    display: none;
+}
+
 .recipe-page img {
     height: 500px;
     border-radius: 10px;
@@ -42,6 +46,11 @@
 @media (max-width: 800px) {
     .home-link {
         text-align: center;
+    }
+
+    .home-link-responsive {
+        display: block;
+        margin-top: 10px;
     }
 
     .overview {
