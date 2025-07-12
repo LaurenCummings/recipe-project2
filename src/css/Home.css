@@ -131,6 +131,15 @@
     }
 }
 
+@media (max-height: 620px) {
+    .sidebar-responsive {
+        height: calc(100vh - 50px);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        top: 10px;
+    }
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
