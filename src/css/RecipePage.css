@@ -4,6 +4,11 @@
     margin-bottom: 40px;
 }
 
+.home-link {
+    text-align: left;
+    margin: 10px;
+}
+
 .recipe-page img {
     height: 500px;
     border-radius: 10px;
@@ -35,6 +40,10 @@
 }
 
 @media (max-width: 800px) {
+    .home-link {
+        text-align: center;
+    }
+
     .overview {
         flex-direction: column;
     }

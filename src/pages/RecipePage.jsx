@@ -9,9 +9,11 @@ function RecipePage() {
 
     return (
         <div className="recipe-page">
-            <Link to="/">
-                <FaArrowLeft /> Back to Home
-            </Link>
+            <div className="home-link">
+                <Link className="home-link" to="/">
+                    <FaArrowLeft /> Back to Home
+                </Link>
+            </div>
             <div className="overview">
                 <div>
                     <h2>{recipe.name}</h2>
