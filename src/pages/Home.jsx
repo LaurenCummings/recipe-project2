@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FiArrowRightCircle, FiArrowLeftCircle } from 'react-icons/fi'; 
 import RecipeCard from '../components/RecipeCard';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 function Home() {
     const [loading, setLoading] = useState(false);
@@ -148,7 +149,8 @@ function Home() {
                     }
                 </div>    
                 )
-            }                
+            }
+            <Footer />                
         </div>
 
     )
