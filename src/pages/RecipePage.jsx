@@ -1,6 +1,7 @@
 import '../css/RecipePage.css';
 import { useLocation, Link } from 'react-router-dom';
 import Rating from '../components/Rating';
+import { FaArrowLeft } from 'react-icons/fa';
 
 function RecipePage() {
     const location = useLocation();
@@ -9,7 +10,7 @@ function RecipePage() {
     return (
         <div className="recipe-page">
             <Link to="/">
-                Back to Home
+                <FaArrowLeft /> Back to Home
             </Link>
             <div className="overview">
                 <div>
