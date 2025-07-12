@@ -130,6 +130,10 @@
         margin-left: 0px;
         height: calc(100vh - 220px);
     }
+
+    .footer {
+        line-height: 10px;
+    }
 }
 
 @media (max-height: 620px) {
