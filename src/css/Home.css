@@ -114,7 +114,7 @@
         border-radius: 10px;
         padding: 10px;
         left: 0;
-        top: calc(100vh / 2 - 310px);
+        top: 10px;
         transition: transform 0.3s linear;
     }
 
