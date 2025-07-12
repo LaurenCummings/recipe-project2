@@ -109,12 +109,12 @@
     .sidebar-responsive {
         background-color: rgb(95, 181, 238);
         width: 200px;
-        height: 600px;
+        height: 650px;
         position: fixed;
         border-radius: 10px;
         padding: 10px;
         left: 0;
-        top: calc(100vh / 2 - 310px);
+        top: 5px;
         transition: transform 0.3s linear;
     }
 
@@ -128,16 +128,6 @@
     
     .recipes {
         margin-left: 0px;
-    }
-}
-
-@media screen and (max-height: 560px) {
-    .sidebar-responsive {
-        height: 650px;
-        top: 5px;
-    }
-
-    .recipes {
         height: calc(100vh - 220px);
     }
 
