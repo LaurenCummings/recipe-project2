@@ -1,5 +1,5 @@
 import '../css/RecipePage.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Rating from '../components/Rating';
 
 function RecipePage() {
@@ -8,6 +8,9 @@ function RecipePage() {
 
     return (
         <div className="recipe-page">
+            <Link to="/">
+                Back to Home
+            </Link>
             <div className="overview">
                 <div>
                     <h2>{recipe.name}</h2>
