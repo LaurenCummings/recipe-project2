@@ -17,7 +17,7 @@ function Sidebar({ mealType, cultureType, checkAllMeals, checkAllCulture, setSea
     return (
         <div className="sidebar">
             <fieldset>
-                <legend>Filter by Meal Type:</legend>
+                <legend>Filter by Meal:</legend>
                 <div>
                     <input 
                         type="radio" 
