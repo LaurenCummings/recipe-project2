@@ -32,7 +32,8 @@ function Home() {
         }
     }
 
-    async function handleSearch() {
+    async function handleSearch(event) {
+        event.preventDefault();
         setCheckAllMeals(true);
         setCheckAllCulture(true);
         if(!searchTerm.trim()) {
@@ -112,14 +113,14 @@ function Home() {
 
     return (
         <div className="home">
-            <div className="search">
+            <form onSubmit={handleSearch} className="search">
                 <input 
                     type="text"
                     placeholder="Search for recipes..." 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}/>
-                <button onClick={handleSearch}>Search</button>
-            </div>
+                <button type="submit">Search</button>
+            </form>
             <div>
                 { showFilters ? 
                     <FiArrowLeftCircle className="arrow-left" onClick={handleShowFilters} />
